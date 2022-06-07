@@ -4,7 +4,7 @@ import com.aiden.ad.exception.AdException;
 import com.aiden.ad.vo.CreateUserRequest;
 import com.aiden.ad.vo.CreateUserResponse;
 
-public interface UserService {
+public interface IUserService {
 
     /**
      * @Description: 创建用户

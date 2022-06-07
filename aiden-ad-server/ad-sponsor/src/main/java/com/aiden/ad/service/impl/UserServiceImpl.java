@@ -4,7 +4,7 @@ import com.aiden.ad.constant.Constants;
 import com.aiden.ad.dao.AdUserRepository;
 import com.aiden.ad.entity.AdUser;
 import com.aiden.ad.exception.AdException;
-import com.aiden.ad.service.UserService;
+import com.aiden.ad.service.IUserService;
 import com.aiden.ad.utils.CommonUtils;
 import com.aiden.ad.vo.CreateUserRequest;
 import com.aiden.ad.vo.CreateUserResponse;
@@ -21,7 +21,7 @@ import org.springframework.transaction.annotation.Transactional;
  **/
 @Slf4j
 @Service
-public class UserServiceImpl implements UserService {
+public class UserServiceImpl implements IUserService {
 
     @Autowired
     private AdUserRepository userRepository;
